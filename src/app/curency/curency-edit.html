@@ -1,0 +1,19 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div *ngIf="curency">
+        <h2>{{curency.name}} details!</h2>
+        <div>
+
+        <div>
+          <label>ID: {{curency.id}} </label><br>
+          <input [(ngModel)]="curency.name" placeholder="name" /><br>
+          <input [(ngModel)]="curency.symbol" placeholder="symbol" /><br><br>
+          <button class="btn btn-info" (click)="goBack()">Back</button>
+          <button class="btn btn-info" (click)="save()">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
